@@ -28,7 +28,9 @@ GreenMart, a mid-sized retail store, has been experiencing fluctuating sales and
 
    `data = pd.read_csv('greenmart_transactions.csv')`
 
-![GreenMart Head](<Images/Screenshot (158).png>)
+<div style="text-align: center;">
+  <img src="Images/Screenshot (158).png" alt="GreenMart head">
+</div>
 
 3. **Calculating RFM Metrics**:
    - **Recency**: Calculate the number of days since the last purchase.
@@ -39,16 +41,22 @@ GreenMart, a mid-sized retail store, has been experiencing fluctuating sales and
 4. **Merging RFM Metrics**:
    - Combine the recency, frequency, and monetary metrics into a single DataFrame.
   
-![RFM](<Images/Screenshot (160).png>)
+<div style="text-align: center;">
+  <img src="Images/Screenshot (160).png" alt="RFM">
+</div>
 
 5. **RFM Scoring**:
    - Assign scores to each RFM metric based on quantiles.
 
     `df.loc[:,'R'] = pd.qcut(df['Recency'], q=quartiles, labels=labels_desc).astype('category')`
+
     `df.loc[:,'F'] = pd.qcut(df['Frequency'], q=quartiles, labels=labels_asc).astype('category')`
+
     `df.loc[:,'M'] = pd.qcut(df['Monetary'], q=quartiles, labels=labels_asc).astype('category')`
 
-![RFM scores](<Images/Screenshot (162).png>)
+<div style="text-align: center;">
+  <img src="Images/Screenshot (162).png" alt="RFM scores">
+</div>
 
 6. **Customer Segmentation:**
     - Group customers into segments based on their RFM scores.
@@ -58,9 +66,22 @@ GreenMart, a mid-sized retail store, has been experiencing fluctuating sales and
         - Good Customers: High monetary value, but lower frequency or recency than Superstars
         - At Risk: Low RFM scores, inactive customers.
 
-![RFM Segment](<Images/Screenshot (164).png>)
+<div style="text-align: center;">
+  <img src="Images/Screenshot (164).png" alt="RFM Segment">
+</div>
 
 7. **Vizualizations:**
     - Made several charts to depict pareto charts, radar charts, heatmaps etc.
 
-![RFM Pareto Chart](Images/pareto_rfm.jpg)
+<div style="text-align: center;">
+  <img src="Images/pareto_rfm.jpg" alt="RFM Pareto Chart">
+</div>
+
+**VERSION**
+---
+python: 3.12.4
+numpy: 1.26.4
+pandas: 2.2.2
+matplotlib: 3.9.1.post1
+requests: 2.32.2
+seaborn: 0.13.2
