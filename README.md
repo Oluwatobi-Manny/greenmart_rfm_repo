@@ -20,9 +20,11 @@ GreenMart, a mid-sized retail store, has been experiencing fluctuating sales and
    - Load the dataset into a DataFrame.
 
 
-   <span>`import pandas as pd`</span>
-   <span>`import datetime as dt`</span>
-   <span>`import numpy as np`</span>
+   `import pandas as pd`
+   
+   `import datetime as dt`
+   
+   `import numpy as np`
 
    `data = pd.read_csv('greenmart_transactions.csv')`
 
