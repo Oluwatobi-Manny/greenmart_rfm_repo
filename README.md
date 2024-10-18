@@ -79,9 +79,9 @@ GreenMart, a mid-sized retail store, has been experiencing fluctuating sales and
 
 **VERSION**
 ---
-python: 3.12.4
-numpy: 1.26.4
-pandas: 2.2.2
-matplotlib: 3.9.1.post1
-requests: 2.32.2
-seaborn: 0.13.2
+<div>python: 3.12.4</div>
+<div>numpy: 1.26.4</div>
+<div>pandas: 2.2.2</div>
+<div>matplotlib: 3.9.1.post1</div>
+<div>requests: 2.32.2</div>
+<div>seaborn: 0.13.2</div>
