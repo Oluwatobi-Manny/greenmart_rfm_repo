@@ -20,13 +20,13 @@ GreenMart, a mid-sized retail store, has been experiencing fluctuating sales and
    - Load the dataset into a DataFrame.
 
 
-   `import pandas as pd`
-   `import datetime as dt`
-   `import numpy as np`
+   <span>`import pandas as pd`</span>
+   <span>`import datetime as dt`</span>
+   <span>`import numpy as np`</span>
 
    `data = pd.read_csv('greenmart_transactions.csv')`
 
-![GreenMart Head](<Images/Screenshot (79).png>)
+![GreenMart Head](<Images/Screenshot (158).png>)
 
 3. **Calculating RFM Metrics**:
    - **Recency**: Calculate the number of days since the last purchase.
